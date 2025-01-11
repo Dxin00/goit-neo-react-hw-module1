@@ -4,7 +4,7 @@ import { AiOutlineEye } from "react-icons/ai";
 import { AiOutlineLike } from "react-icons/ai";
 import { useState } from "react";
 
-const Profile = ({ name, tag, location, image, stats, message }) => {
+const Profile = ({ name, tag, location, image, stats }) => {
   const [followers, setFollowers] = useState(stats.followers);
   const [views, setViews] = useState(stats.views);
   const [likes, setLikes] = useState(stats.likes);
@@ -26,7 +26,7 @@ const Profile = ({ name, tag, location, image, stats, message }) => {
       <div className={css.profile}>
         <img className={css.image} src={image} alt={name} />
         <p className={css.name}>{name}</p>
-        <h2 className={css.greeting}>{message}</h2>
+        <h2 className={css.greeting}>Hello, glad to see you on my HW REACT #1!</h2>
         <p className={css.tag}>@{tag}</p>
         <p className={css.imageText}>{location}</p>
       </div>
