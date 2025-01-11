@@ -8,7 +8,7 @@ import FriendList from "./components/FriendList/FriendList";
 import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 
 const App = () => {
-  const [activeSection, setActiveSection] = useState("friends"); // Состояние для активной секции
+  const [activeSection, setActiveSection] = useState("friends"); 
 
   return (
     <>
